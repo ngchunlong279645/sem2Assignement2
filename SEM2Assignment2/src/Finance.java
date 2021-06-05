@@ -31,9 +31,9 @@ public class Finance extends VolunteerTeacherOrganisation {
 	}
 	
 	public void printInfo() {
-		System.out.println("Organisation   : "+orgName);
-		System.out.println("Total Donation  : RM "+totalDonation);	
+		System.out.println("Organisation     : "+orgName);
+		System.out.println("Total Donation   : RM "+totalDonation);	
 		System.out.println("Total Expenses   : RM "+totalExpenses);
-		System.out.println("Balance    : RM "+calBalance());
+		System.out.println("Balance          : RM "+calBalance());
 	}
 }

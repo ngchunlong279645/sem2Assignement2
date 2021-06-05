@@ -32,7 +32,7 @@ public class EventDescription extends VolunteerTeacherOrganisation {
 	}
 
 	public void printInfo() {
-		System.out.println("Organisation\t\t: "+orgName);
+		System.out.println("Organisation\t: "+orgName);
 		System.out.println("Event \t\t: "+eventName);
 		System.out.println("Date \t\t: "+date);
 		System.out.println("Time \t\t: "+time+"PM");

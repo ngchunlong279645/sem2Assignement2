@@ -1,7 +1,7 @@
 
 public interface Payment {
 
-	 double getPayment(double price,double quantity,double discount);
+	 double getPayment(double a,double b,double c);
 	
 	
 	 

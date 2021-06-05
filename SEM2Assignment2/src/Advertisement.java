@@ -11,7 +11,7 @@ public class Advertisement extends EventDescription {
 	
 	public void printInfo() {
 		System.out.println("+============================================================+");
-		System.out.println("| We will celebrate "+super.getEventname()+" at"+super.getDate()+"	     |");
+		System.out.println("| We will celebrate "+super.getEventname()+" at"+super.getDate()+" |");
 		System.out.println("| This event is organise by "+super.getOrgName()+"\t\t\t     |");
 		System.out.println("| Each tickets price will be RM "+super.getPrice()+" per Unit\t\t     |");
 		System.out.println("| Above 2 tickets price will be RM 2 per Unit\t\t     |");
