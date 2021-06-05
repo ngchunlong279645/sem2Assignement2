@@ -33,8 +33,8 @@ public class Main {
 			if(option==1) {
 				System.out.println("\nWhich event are you interested in ?");
 				System.out.println("1. World Book and Copyright Day");
-				System.out.println("2. Happy Holiday");
-				System.out.println("3. Day");
+				System.out.println("2. International Day of Families");
+				System.out.println("3. International Day of Happiness");
 				System.out.print("Enter your option: ");
 				eventType = scan.nextInt();
 

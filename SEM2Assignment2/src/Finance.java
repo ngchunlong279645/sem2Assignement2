@@ -2,7 +2,7 @@
 public class Finance extends VolunteerTeacherOrganisation {
 	private double totalDonation,totalExpenses;
 	private String orgName,month;
-	private double bill,eventExpenses,rentalFee,otherExpenses;
+	private double bill,eventExpenses,rentalFee;
 	
 
 	public Finance (String orgName,double totalDonation,double bill, double eventExpenses, double rentalFee) {	//constructor with 4 argument	
@@ -12,15 +12,14 @@ public class Finance extends VolunteerTeacherOrganisation {
 		this.bill=bill;
 		this.eventExpenses=eventExpenses;
 		this.rentalFee=rentalFee;	
+		
+		Payment totalExpenses = new FinanceGetPayment();
+		this.totalExpenses=totalExpenses.getPayment(rentalFee, eventExpenses, bill);
 	}
 	
-	public double totalExpenses() {
-		totalExpenses=bill+eventExpenses+rentalFee+otherExpenses;
-		return totalExpenses;
-	}
 	
 	public double calBalance() {
-		return totalDonation-totalExpenses();
+		return totalDonation-totalExpenses;
 	}
 	
 	public void setMonth(String month) {
@@ -34,7 +33,7 @@ public class Finance extends VolunteerTeacherOrganisation {
 	public void printInfo() {
 		System.out.println("Organisation   : "+orgName);
 		System.out.println("Total Donation  : RM "+totalDonation);	
-		System.out.println("Total Expenses in  : RM "+totalExpenses());
+		System.out.println("Total Expenses   : RM "+totalExpenses);
 		System.out.println("Balance    : RM "+calBalance());
 	}
 }

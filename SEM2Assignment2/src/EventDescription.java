@@ -18,13 +18,13 @@ public class EventDescription extends VolunteerTeacherOrganisation {
 					this.time=3;
 				}
 				else if(this.eventType == 2) {
-					this.eventName="Happy Holiday";
+					this.eventName="International Day of Families";
 					this.price=5;
 					this.date="2-9-2021";
 					this.time=7;
 				}
 				else {
-					this.eventName=" Day";
+					this.eventName="International Day of Happiness";
 					this.price=4;
 					this.date="7-8-2021";
 					this.time=5;
@@ -44,7 +44,7 @@ public class EventDescription extends VolunteerTeacherOrganisation {
 	}
 	
 	public String getDate() {
-			return date;
+		return date;
 		}
 	
 	public String getOrgName() {

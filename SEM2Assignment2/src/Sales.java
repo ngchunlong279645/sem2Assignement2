@@ -11,14 +11,14 @@ public class Sales extends Participant {
 		if(quantity<=2) {
 			Payment sales = new SalesGetPayment();
 			printInfo(price,quantity);
-			System.out.println("Total Price\t: RM "+sales.getPayment(price, quantity));
+			System.out.println("Total Price\t: RM "+sales.getPayment(price, quantity,0));
 			System.out.println("");
 		}
 		else if(quantity>2&&quantity<=4) {
 			double newPrice=2;
 			Payment sales = new SalesGetPayment();
 			printInfo(newPrice,quantity);
-			System.out.println("Total Price\t: RM "+sales.getPayment(quantity));
+			System.out.println("Total Price\t: RM "+sales.getPayment(newPrice,quantity,0));
 			System.out.println("");
 		}
 		else {
@@ -36,5 +36,6 @@ public class Sales extends Participant {
 		System.out.println("Quantity\t: "+quantity);
 		System.out.println("Unit Price\t: RM "+newPrice);
 	}
+
 
 }
