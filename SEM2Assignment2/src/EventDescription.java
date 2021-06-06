@@ -39,19 +39,19 @@ public class EventDescription extends VolunteerTeacherOrganisation {	//2.1 Inher
 		System.out.println("Entrance Fee \t: "+price+"\n");
 	}
 
-	public String getEventname() {
+	public String getEventname() {	//2.3 Encapsulation
 		return eventName;
 	}
 	
-	public String getDate() {
+	public String getDate() {	//2.3 Encapsulation
 		return date;
 		}
 	
-	public String getOrgName() {
+	public String getOrgName() {	//2.3 Encapsulation
 		return orgName;
 	}
 	
-	public double getPrice() {
+	public double getPrice() {	//2.3 Encapsulation
 		return price;
 	}
 	

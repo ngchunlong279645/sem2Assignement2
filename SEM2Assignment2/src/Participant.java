@@ -42,7 +42,7 @@ public class Participant extends EventDescription  { // 2.1 Inheritance
 		
 	}
 	
-	public double getQuantity() {
+	public double getQuantity() {	//2.3 Encapsulation
 		return quantity;
 	}
 
