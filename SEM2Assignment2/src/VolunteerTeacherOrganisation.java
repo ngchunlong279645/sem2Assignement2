@@ -6,6 +6,6 @@ public abstract class VolunteerTeacherOrganisation {
 		this.orgName=orgName;
 	}
 	
-	public abstract void printInfo();
+	public abstract void printInfo(); // 2.4 Abstraction
 	
 }

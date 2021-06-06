@@ -1,6 +1,6 @@
 
-public interface Payment {
-
+public interface Payment {		//interface
+	
 	 double getPayment(double a,double b,double c);
 	
 	

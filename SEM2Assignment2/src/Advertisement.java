@@ -1,15 +1,15 @@
 
-public class Advertisement extends EventDescription {
+public class Advertisement extends EventDescription {	// inheritance
 	private double discount;
 	
-	public Advertisement(String orgName,int eventType,double discount) {	//constructor with 2 argument
+	public Advertisement(String orgName,int eventType,double discount) {	//constructor with 3 argument
 		super(orgName,eventType);
 		System.out.println(">>>>>>>>>>>>>>>>>>>>Come and join us<<<<<<<<<<<<<<<<<<<<<<<\n");
 		this.discount=discount;
 		 printInfo();
 	}
 	
-	public void printInfo() {
+	public void printInfo() {	// polymorphism
 		System.out.println("+============================================================+");
 		System.out.println("| We will celebrate "+super.getEventname()+" at"+super.getDate()+" |");
 		System.out.println("| This event is organise by "+super.getOrgName()+"\t\t\t     |");

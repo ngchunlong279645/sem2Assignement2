@@ -1,5 +1,5 @@
 
-public class EventDescription extends VolunteerTeacherOrganisation {
+public class EventDescription extends VolunteerTeacherOrganisation {	//2.1 Inheritance
 	private String eventName;
 	private String orgName;
 	private String date;	
@@ -31,7 +31,7 @@ public class EventDescription extends VolunteerTeacherOrganisation {
 				}
 	}
 
-	public void printInfo() {
+	public void printInfo() {	//2.2 Polymorphism
 		System.out.println("Organisation\t: "+orgName);
 		System.out.println("Event \t\t: "+eventName);
 		System.out.println("Date \t\t: "+date);

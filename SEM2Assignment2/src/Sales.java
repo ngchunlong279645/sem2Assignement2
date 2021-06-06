@@ -1,5 +1,5 @@
 
-public class Sales extends Participant {
+public class Sales extends Participant { //2.1 Inheritance
 	private double price;
 	private double quantity;
 	
@@ -9,14 +9,14 @@ public class Sales extends Participant {
 		this.quantity=super.getQuantity();
 		
 		if(quantity<=2) {
-			Payment sales = new SalesGetPayment();
+			Payment sales = new SalesGetPayment();	//2.5 Interface
 			printInfo(price,quantity);
 			System.out.println("Total Price\t: RM "+sales.getPayment(price, quantity,0));
 			System.out.println("");
 		}
 		else if(quantity>2&&quantity<=4) {
 			double newPrice=2;
-			Payment sales = new SalesGetPayment();
+			Payment sales = new SalesGetPayment();	//2.5 Interface
 			printInfo(newPrice,quantity);
 			System.out.println("Total Price\t: RM "+sales.getPayment(newPrice,quantity,0));
 			System.out.println("");
@@ -24,7 +24,7 @@ public class Sales extends Participant {
 		else {
 			double newPrice=1.50;
 			double discount=0.10;
-			Payment sales = new SalesGetPayment();
+			Payment sales = new SalesGetPayment(); //2.5 Interface
 			printInfo(newPrice,quantity);
 			System.out.println("Discount\t: "+discount*100+"%");
 			System.out.println("Total Price\t: RM "+sales.getPayment(newPrice, quantity, discount));
@@ -32,7 +32,7 @@ public class Sales extends Participant {
 		}	
 	}
 	
-	public void printInfo(double newPrice,double quantity) {
+	public void printInfo(double newPrice,double quantity) {	// polymorphism
 		System.out.println("Quantity\t: "+quantity);
 		System.out.println("Unit Price\t: RM "+newPrice);
 	}

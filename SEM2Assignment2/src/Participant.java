@@ -1,7 +1,7 @@
 import java.util.Random;
 import java.util.Scanner;
 
-public class Participant extends EventDescription  {
+public class Participant extends EventDescription  { // 2.1 Inheritance
 	private String name;
 	private int age;
 	private char gender;
@@ -12,7 +12,7 @@ public class Participant extends EventDescription  {
 	
 	public Participant(String orgName,int eventType) {
 		super(orgName,eventType);
-		System.out.println("Registration for "+super.getEventname());
+		System.out.println("Registration for "+super.getEventname());  //method from super class
 		System.out.print("Enter Name      : ");
 		this.name=scan.nextLine();
 		System.out.print("Enter Age       : ");
@@ -20,7 +20,7 @@ public class Participant extends EventDescription  {
 		System.out.print("Enter Gender    : ");
 		this.gender=scan.next().charAt(0);
 		scan.nextLine();
-		this.price=super.getPrice();
+		this.price=super.getPrice();	//method from super class
 		System.out.print("Enter Quantity  : ");
 		this.quantity=scan.nextDouble();	
 		System.out.println("Register Successfully");
@@ -34,7 +34,7 @@ public class Participant extends EventDescription  {
 		System.out.println("Thank You For Your Donation");
 	}
 	
-	public void printInfo() {
+	public void printInfo() {	//polymorphism
 		System.out.println("===========================");
 		System.out.println("Name \t\t: "+name);
 		System.out.println("Age \t\t: "+age);

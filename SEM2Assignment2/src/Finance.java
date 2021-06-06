@@ -1,5 +1,5 @@
 
-public class Finance extends VolunteerTeacherOrganisation {
+public class Finance extends VolunteerTeacherOrganisation { //2.1 Inheritance
 	private double totalDonation,totalExpenses;
 	private String orgName,month;
 	private double bill,eventExpenses,rentalFee;
@@ -13,7 +13,7 @@ public class Finance extends VolunteerTeacherOrganisation {
 		this.eventExpenses=eventExpenses;
 		this.rentalFee=rentalFee;	
 		
-		Payment totalExpenses = new FinanceGetPayment();
+		Payment totalExpenses = new FinanceGetPayment();	//2.5 Interface
 		this.totalExpenses=totalExpenses.getPayment(rentalFee, eventExpenses, bill);
 	}
 	
@@ -22,15 +22,15 @@ public class Finance extends VolunteerTeacherOrganisation {
 		return totalDonation-totalExpenses;
 	}
 	
-	public void setMonth(String month) {
+	public void setMonth(String month) {	//2.3 Encapsulation
 		this.month=month;
 	}
 	
-	public String getMonth() {
+	public String getMonth() {	//2.3 Encapsulation
 		return month;
 	}
 	
-	public void printInfo() {
+	public void printInfo() {	//2.2 Polymorphism
 		System.out.println("Organisation     : "+orgName);
 		System.out.println("Total Donation   : RM "+totalDonation);	
 		System.out.println("Total Expenses   : RM "+totalExpenses);

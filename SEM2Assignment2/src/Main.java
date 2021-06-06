@@ -38,11 +38,11 @@ public class Main {
 				System.out.print("Enter your option: ");
 				eventType = scan.nextInt();
 
-		Advertisement latestNews = new Advertisement("SOLS 24/7",eventType,10);
-		EventDescription event = new EventDescription("SOLS 24/7",eventType);
+		Advertisement latestNews = new Advertisement("SOLS 24/7",eventType,10);	// constructor with 3 arguments
+		EventDescription event = new EventDescription("SOLS 24/7",eventType);	// constructor with 2 arguments
 		event.printInfo();
 		
-		Sales newEvent  = new Sales("SOLS 24/7",eventType);
+		Sales newEvent  = new Sales("SOLS 24/7",eventType);	// constructor with 2 arguments
 		System.out.println("Do you want to donate ?? 1-yes 2-no");
 		int selection=scan.nextInt();
 		if(selection==1) {
@@ -55,9 +55,9 @@ public class Main {
 			else {
 				System.out.println("");
 				System.out.println("Welcome Back Admin ");	
-				Finance report = new Finance("SOLS 24/7",45686.80,312,562,200);
-				report.setMonth("June");
-				System.out.println(">>>>>>>>Financial Report In "+report.getMonth()+"<<<<<<<<<<<<<<<<\n");
+				Finance report = new Finance("SOLS 24/7",45686.80,312,562,200);	// constructor with 5 arguments
+				report.setMonth("June");	//2.3 Encapsulation
+				System.out.println(">>>>>>>>Financial Report In "+report.getMonth()+"<<<<<<<<<<<<<<<<\n");	//2.3 Encapsulation
 				report.printInfo();
 			}
 			System.out.println("");
